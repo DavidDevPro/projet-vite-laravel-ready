@@ -1,0 +1,21 @@
+@use "./settings/reset";
+@use "./settings/fonts";
+@use "./utils/mixins";
+@use "./utils/variables";
+@use "./pages/HomePage";
+@use "./layout/backtotopbutton";
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+.test-image{
+    width: 5%;
+}
+.required-marker {
+    color: red;
+    font-size: 0.7rem;
+}

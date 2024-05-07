@@ -1,0 +1,36 @@
+// BackToTopButton.scss
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #606061; // Couleur de fond
+    color: white; // Couleur de l'icône
+    border: none;
+    border-radius: 50%; // Bouton rond
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // Ombre portée
+    opacity: 0; // Initialement masqué
+    transform: translateY(20px); // Commence légèrement décalé vers le bas
+    z-index: 1000; // Assurez-vous qu'il est au-dessus des autres éléments
+  
+    &:hover {
+      background-color: #444444; // Couleur de fond au survol
+    }
+  
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0); // Apparaît avec une transition fluide
+    }
+  
+    svg {
+      font-size: 20px; // Taille de l'icône
+      color: white; // Couleur de l'icône
+    }
+  }
+  
